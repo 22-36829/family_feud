@@ -1,0 +1,127 @@
+/* Importing Bootstrap */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Use your preferred font */
+}
+
+#game-header {
+    background-color: #007bff; /* Primary color for header */
+    color: white;
+    text-align: center;
+    padding: 15px 0; /* Space around header text */
+}
+
+#game-container {
+    max-width: 800px; /* Set maximum width for the game container */
+    margin: auto; /* Center the game container */
+    padding: 20px; /* Add padding for spacing */
+    height: 70vh; /* Fixed height for the game container */
+    overflow: auto; /* Enable scrolling if content exceeds height */
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-bottom: 20px; /* Space below navbar */
+}
+
+.nav-link {
+    margin-right: 15px; /* Space between navigation links */
+}
+
+.nav-link:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+/* Table Styles */
+.score-table {
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect for the score table */
+}
+
+.score-table th, .score-table td {
+    text-align: center; /* Center-align team names in the table */
+}
+
+/* Game Controls Styles */
+.team-controls {
+    display: flex; /* Use Flexbox for horizontal alignment */
+    justify-content: space-between; /* Space controls evenly */
+    margin-top: 20px; /* Space above game controls */
+}
+
+.buzzer-button {
+    flex: 1; /* Allow buttons to grow */
+    margin: 0 10px; /* Space between buttons */
+}
+
+/* Answer Form Styles */
+#answer-form {
+    display: flex; /* Align input and button in a row */
+    justify-content: space-between; /* Space between input and button */
+    margin-top: 15px; /* Space above the answer form */
+}
+
+#user-answer {
+    flex: 2; /* Allow input to grow more than the button */
+    margin-right: 10px; /* Space between input and button */
+}
+
+/* Button Styles */
+#start-game, #submit-answer {
+    background-color: #007bff; /* Primary button color */
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+#start-game:hover, #submit-answer:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Countdown Timer Styles */
+#countdown-timer {
+    font-size: 24px; /* Make the font size larger */
+    color: red; /* Highlight color */
+    display: none; /* Initially hidden */
+}
+
+/* Result Section Styles */
+#result {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 10px; /* Space around result content */
+    margin-top: 20px; /* Space above result section */
+}
+
+/* Heading and Team Name Styles */
+h1, h2, h3 {
+    font-weight: bold; /* Bold headings */
+    text-transform: uppercase; /* Uppercase headings */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 576px) {
+    #game-container {
+        padding: 10px; /* Less padding on small screens */
+    }
+
+    .nav-link {
+        margin-right: 5px; /* Less space on small screens */
+    }
+
+    .team-controls {
+        flex-direction: column; /* Stack controls on small screens */
+    }
+
+    .buzzer-button {
+        margin-bottom: 10px; /* Space between stacked buttons */
+    }
+
+    #answer-form {
+        flex-direction: column; /* Stack input and button on small screens */
+    }
+
+    #user-answer {
+        margin-bottom: 10px; /* Space below input */
+        margin-right: 0; /* Remove right margin */
+    }
+}
